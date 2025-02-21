@@ -1,0 +1,428 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{98E7BD4E-2471-4996-A1FA-FAB5B9E9ABF7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Nature_s_Green</RootNamespace>
+    <AssemblyName>Nature%27s Green</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\..\..\Downloads\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CalendarEventFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalendarEventFrm.Designer.cs">
+      <DependentUpon>CalendarEventFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegister.Designer.cs">
+      <DependentUpon>frmRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Function.cs" />
+    <Compile Include="gallary1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="gallary1.Designer.cs">
+      <DependentUpon>gallary1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gallaryinfo\Gallarylist.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gallaryinfo\Gallarylist.Designer.cs">
+      <DependentUpon>Gallarylist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainAppDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainAppDB.Designer.cs">
+      <DependentUpon>MainAppDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainFeatureBG.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainFeatureBG.Designer.cs">
+      <DependentUpon>MainFeatureBG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NaturesGreenDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NaturesGreenDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash.Designer.cs">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UC_Aglaonema.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Aglaonema.Designer.cs">
+      <DependentUpon>UC_Aglaonema.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_AloeVera.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_AloeVera.Designer.cs">
+      <DependentUpon>UC_AloeVera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Azalae.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Azalae.Designer.cs">
+      <DependentUpon>UC_Azalae.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Cactus.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Cactus.Designer.cs">
+      <DependentUpon>UC_Cactus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_CalendarControlBlank.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_CalendarControlBlank.Designer.cs">
+      <DependentUpon>UC_CalendarControlBlank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_CalendarDays.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_CalendarDays.Designer.cs">
+      <DependentUpon>UC_CalendarDays.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_DwarfUmbrella.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_DwarfUmbrella.Designer.cs">
+      <DependentUpon>UC_DwarfUmbrella.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_EnglishIvy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_EnglishIvy.Designer.cs">
+      <DependentUpon>UC_EnglishIvy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_GerberaDaisy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_GerberaDaisy.Designer.cs">
+      <DependentUpon>UC_GerberaDaisy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_JadePlant.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_JadePlant.Designer.cs">
+      <DependentUpon>UC_JadePlant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_LuckyBamboo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_LuckyBamboo.Designer.cs">
+      <DependentUpon>UC_LuckyBamboo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Marginata.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Marginata.Designer.cs">
+      <DependentUpon>UC_Marginata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Pachira.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Pachira.Designer.cs">
+      <DependentUpon>UC_Pachira.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_PeaceLily.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_PeaceLily.Designer.cs">
+      <DependentUpon>UC_PeaceLily.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Pictures.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Pictures.Designer.cs">
+      <DependentUpon>UC_Pictures.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_PothosMarbleQueen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_PothosMarbleQueen.Designer.cs">
+      <DependentUpon>UC_PothosMarbleQueen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_SnakePlant.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_SnakePlant.Designer.cs">
+      <DependentUpon>UC_SnakePlant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_SpiderPlant.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_SpiderPlant.Designer.cs">
+      <DependentUpon>UC_SpiderPlant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Zamioculas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Zamioculas.Designer.cs">
+      <DependentUpon>UC_Zamioculas.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CalendarEventFrm.resx">
+      <DependentUpon>CalendarEventFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegister.resx">
+      <DependentUpon>frmRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gallary1.resx">
+      <DependentUpon>gallary1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gallaryinfo\Gallarylist.resx">
+      <DependentUpon>Gallarylist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainAppDB.resx">
+      <DependentUpon>MainAppDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainFeatureBG.resx">
+      <DependentUpon>MainFeatureBG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Splash.resx">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Aglaonema.resx">
+      <DependentUpon>UC_Aglaonema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_AloeVera.resx">
+      <DependentUpon>UC_AloeVera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Azalae.resx">
+      <DependentUpon>UC_Azalae.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Cactus.resx">
+      <DependentUpon>UC_Cactus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_CalendarControlBlank.resx">
+      <DependentUpon>UC_CalendarControlBlank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_CalendarDays.resx">
+      <DependentUpon>UC_CalendarDays.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_DwarfUmbrella.resx">
+      <DependentUpon>UC_DwarfUmbrella.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_EnglishIvy.resx">
+      <DependentUpon>UC_EnglishIvy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_GerberaDaisy.resx">
+      <DependentUpon>UC_GerberaDaisy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_JadePlant.resx">
+      <DependentUpon>UC_JadePlant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_LuckyBamboo.resx">
+      <DependentUpon>UC_LuckyBamboo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Marginata.resx">
+      <DependentUpon>UC_Marginata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Pachira.resx">
+      <DependentUpon>UC_Pachira.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_PeaceLily.resx">
+      <DependentUpon>UC_PeaceLily.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Pictures.resx">
+      <DependentUpon>UC_Pictures.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_PothosMarbleQueen.resx">
+      <DependentUpon>UC_PothosMarbleQueen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_SnakePlant.resx">
+      <DependentUpon>UC_SnakePlant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_SpiderPlant.resx">
+      <DependentUpon>UC_SpiderPlant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Zamioculas.resx">
+      <DependentUpon>UC_Zamioculas.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </None>
+    <None Include="NaturesGreenDataSet.xsc">
+      <DependentUpon>NaturesGreenDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="NaturesGreenDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NaturesGreenDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NaturesGreenDataSet.xss">
+      <DependentUpon>NaturesGreenDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\274882724_1019926885572377_2734566522296931001_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Welcome BG.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Welcome BG btn.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tree on hand.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\274882724_1019926885572377_2734566522296931001_n1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dash BG.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UC_pictures BG.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p-cactus.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p-Azalea.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p-jade plant.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p-English ivy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p-dwarf umbrella tree.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p-spider plant.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p-aloe vera.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p-Marginata.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Snake Plant.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p-Zamioculcas zamifolia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p-Bamboo plant.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p-pachira money tree.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p-aglaonema.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p-peace lily plant.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p-Pothos Marble Queen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p-gerbera daisy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Guides BG.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg guide.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\person bg1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar bg.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
